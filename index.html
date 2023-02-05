@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Plane</title>
+</head>
+
+<body>
+
+    <canvas id="canvas"></canvas>
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="vd2.mp4" type="video/mp4">
+    </video>
+    <div id="label">
+        <label id="portName"></label>
+        <label id="xposition"></label>
+        <label id="yposition"></label>
+        <label id="deviste"></label>
+        <label id="State"></label>
+    </div>
+    <div class="container" id="cont">
+        <form action="javascript:void();">
+            <div class="col-12">
+
+
+                <div class="form-group col-md-4">
+                    <label for="inputState"></label>
+                    <select id="source" class="form-control" name="src">
+                  <option>canada</option>
+                  <option >usa</option>
+                  <option >brazil</option>
+                  <option >norvege</option>
+                  <option >morocco</option>
+                  <option >southAfrica</option>
+                  <option >russia</option>
+                  <option >china</option>
+                  <option >australia</option>
+                </select>
+                    <select id="destination" class="form-control">
+                  <option>usa</option>
+                  <option >canada</option>
+                  <option >brazil</option>
+                  <option >norvege</option>
+                  <option >morocco</option>
+                  <option >southAfrica</option>
+                  <option >russia</option>
+                  <option >china</option>
+                  <option >australia</option>
+                </select>
+                    <input type="text" id="speed" class="form-control" placeholder="Speed" name="speed">
+                    <button type="submit" class="btn btn-primary" onsubmit="flyPlane()">Simulate</button>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+
+    <script type="module" src="script11.js"></script>
+</body>
+
+</html>
